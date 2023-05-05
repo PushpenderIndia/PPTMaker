@@ -16,8 +16,10 @@ Project was developed in a Hackathon where we able to qualify the 1st round.
 
 ## Installation
 ```
+cd PPTMaker
 python -m pip install -r requirements.txt
 # Install Redis
+# Update OPENAI_KEY & OpenAI's ACCESS_KEY in PPTMaker/home/tasks.py
 python manage.py makemigrations
 python manage.py migrate
 ```
