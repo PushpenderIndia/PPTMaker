@@ -14,9 +14,23 @@ Project was developed in a Hackathon where we able to qualify the 1st round.
 - OpenAi API
 - Unsplash API
 
+## Installation
+```
+python -m pip install -r requirements.txt
+# Install Redis
+python manage.py makemigrations
+python manage.py migrate
+```
+
+## How to Run
+```
+python manage.py runserver 
+celery -A PPTMaker.celery worker -l info --pool=eventlet
+```
+
 ## Hackathon Teammate
-- [Arushi Jain ](https://github.com/arushi167))
-- [Pushpender Singh](https://github.com/pushpenderindia))
+- [Arushi Jain ](https://github.com/arushi167)
+- [Pushpender Singh](https://github.com/pushpenderindia)
 - [Ayushi Gupta](https://github.com/)
 - [Yuvraj Singh](https://github.com/Yuvraj0208)
 
